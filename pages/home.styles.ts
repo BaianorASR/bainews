@@ -9,6 +9,12 @@ export const contentContainer = styled.main`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 840px) {
+    flex-direction: column;
+    padding: 1rem;
+    height: calc(100vh - 6rem);
+  }
 `;
 
 export const hero = styled.section`
@@ -43,5 +49,12 @@ export const hero = styled.section`
 
   button {
     margin-top: 2.5rem;
+  }
+
+  @media (max-width: 840px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
   }
 `;
